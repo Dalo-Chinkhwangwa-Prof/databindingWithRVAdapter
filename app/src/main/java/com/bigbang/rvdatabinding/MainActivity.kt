@@ -15,7 +15,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         viewModel = MainViewModel()
+
         dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         dataBinding.viewModel = viewModel
 
@@ -25,5 +27,5 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    }
+}
 }

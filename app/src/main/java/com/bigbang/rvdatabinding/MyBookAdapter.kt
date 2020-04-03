@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.book_item_laout.view.*
 
 class MyBookAdapter(var bookList: List<Book>): RecyclerView.Adapter<MyBookAdapter.BookViewHolder>() {
+
     inner class BookViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookViewHolder {
